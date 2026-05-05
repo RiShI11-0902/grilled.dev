@@ -80,7 +80,7 @@ export default function Sidebar() {
         <p style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.5, marginBottom: 10 }}>
           Save question threads from X in one click.
         </p>
-        <a href="/extension" style={{
+        <a href="https://chromewebstore.google.com/detail/piaechegdcedalnbbmldpfolgcmljpck?utm_source=item-share-cb" style={{
           display: 'block', textAlign: 'center', padding: '7px',
           background: 'var(--accent)', color: 'white', borderRadius: 'var(--radius)',
           fontSize: 12, fontWeight: 600, textDecoration: 'none',

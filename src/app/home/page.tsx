@@ -293,7 +293,7 @@ export default function LandingPage() {
                 </div>
               ))}
             </div>
-            <Link href="/auth/signin">
+            <Link href="https://chromewebstore.google.com/detail/piaechegdcedalnbbmldpfolgcmljpck?utm_source=item-share-cb">
               <button className="btn btn-primary btn-lg">Install Extension — Free</button>
             </Link>
           </div>
@@ -366,7 +366,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── Leaderboard teaser ── */}
-      <section style={{
+      {/* <section style={{
         padding: '100px 24px',
         borderTop: '1px solid var(--border-subtle)',
         background: 'var(--surface)',
@@ -382,7 +382,6 @@ export default function LandingPage() {
             Every upvote on your answer adds to your score. Top answerers get featured weekly — something real to put on your resume or LinkedIn.
           </p>
 
-          {/* Fake leaderboard */}
           <div className="card" style={{ overflow: 'hidden', marginBottom: 24 }}>
             {[
               { rank: '🥇', name: 'Rahul Sharma', handle: 'rahul_codes', score: 1247 },
@@ -419,7 +418,7 @@ export default function LandingPage() {
             <button className="btn btn-secondary">View full leaderboard →</button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Final CTA ── */}
       <section style={{
