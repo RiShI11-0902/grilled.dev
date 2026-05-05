@@ -175,7 +175,7 @@ export default function PostPage() {
       {/* Question sidebar */}
       <aside style={{ width: 280, flexShrink: 0, padding: '24px 16px', position: 'sticky', top: 0, height: '100vh', overflowY: 'auto' }}>
         <div className="card" style={{ padding: '16px', marginBottom: 16 }}>
-          <p style={{ fontWeight: 700, fontSize: 13, marginBottom: 12, color: 'var(--ink-2)', textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '11px' }}>About this question</p>
+          <p style={{ fontWeight: 700, fontSize: 13, marginBottom: 12, color: 'var(--ink-2)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>About this question</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {[
               { label: 'Saved by', value: `${post.saveCount} people` },

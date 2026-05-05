@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import { connectDB } from '@/lib/db'
+import { authOptions } from '@/lib/auth'
 import Post from '@/models/Post'
 import User from '@/models/User'
 

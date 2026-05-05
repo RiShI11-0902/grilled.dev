@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/lib/auth'
+
 import { connectDB } from '@/lib/db'
 import Post from '@/models/Post'
 import User from '@/models/User'
@@ -8,7 +9,7 @@ import User from '@/models/User'
 export async function POST(req: NextRequest, { params }: { params: { id: string; answerId: string } }) {
   try {
     const session = await getServerSession(authOptions)
-    if (!session?.user?._id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
     await connectDB()
     const post = await Post.findById(params.id)

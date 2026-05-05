@@ -461,7 +461,7 @@ export default function LandingPage() {
           <span style={{ color: 'var(--ink-3)', fontSize: 13 }}>© 2025</span>
         </div>
         <div style={{ display: 'flex', gap: 20 }}>
-          {[['Explore', '/feed'], ['Library', '/library'], ['Sign in', '/auth/signin']].map(([label, href]) => (
+          {[['Explore', '/feed'], ['Library', '/library'], ['Sign in', '/auth/signin'], ['Privacy', '/privacy']].map(([label, href]) => (
             <Link key={href} href={href} style={{ fontSize: 13, color: 'var(--ink-3)', textDecoration: 'none', transition: 'color 150ms' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ink)')}
               onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-3)')}
